@@ -200,7 +200,7 @@ div.light_rounded .pp_next:hover {
 	color: #47CD51;
 	font-size: 16px;
 }
-.date, .comments {
+.date, .comments, .time {
 	padding-left: 30px;
 }
 .date:before{position:absolute;content:"";
@@ -215,11 +215,17 @@ div.light_rounded .pp_next:hover {
 	display: block;
 	height: 24px;
 	width: 24px;}
+	.time:before{position:absolute;content:"";
+		background-image:url("../images/clock.png");left: 0;background-repeat: no-repeat;
+		top: 0;
+		display: block;
+		height: 24px;
+		width: 24px;}
 .description-ul {
 	display: flex;margin-top:20px;
 }
 .description-ul li {
-	margin-right: 10px;position:relative;
+	margin-right: 10px;position:relative;text-align:left;
 }
 .description-ul li{font-size:16px;}
 .pp_nav {
@@ -262,7 +268,7 @@ div.light_rounded .pp_next:hover {
 
 
 .mi-slider nav img {
-	width: 50px;
+	width: 100px;
 }
 
 .mi-slider {
@@ -279,7 +285,8 @@ div.light_rounded .pp_next:hover {
 	bottom: 140px;
 	overflow: hidden;
 	text-align: center;
-	pointer-events: none;
+	pointer-events: none;display: flex;
+	justify-content: center;
 }
 
 .no-js .mi-slider ul {
@@ -356,7 +363,7 @@ div.light_rounded .pp_next:hover {
 	display: inline-block;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	padding: 40px 30px 30px 34px;
+	padding: 40px 10px 30px 10px;
 	position: relative;
 	color: #888;
 	outline: none;
@@ -607,9 +614,8 @@ div.light_rounded .pp_next:hover {
 	transition: all 500ms ease;
     box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12)
 }
-#showall {
-	display: flex !important;
-	flex-wrap: wrap;
+.codrops-top a {
+	float: left !important;
 }
 .img-thumbnail {
 	width: 100% !important;
@@ -690,4 +696,35 @@ div.light_rounded .pp_next:hover {
 	transition: all 500ms ease;
 	z-index: 1;
 	text-align: center;
+}
+.mi-current li {
+	width: 100% !important;display:block !important;
+}
+.modal-dialog {
+	width: 80% !important;
+	margin: 30px auto;
+}
+.text {
+	width: 40%;
+	display: flex;
+align-items: center;
+
+-webkit-align-items: center;
+-webkit-align-content: center;
+-moz-box-pack: center;
+-moz-box-align: center;
+display: -webkit-box;
+-webkit-box-pack: center;
+-webkit-box-align: center;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;flex-wrap: wrap;
+}
+.text p{text-align:left;}
+#mi-slider {
+	width: 60%;
+}
+.main {
+	display: flex;
 }
