@@ -268,7 +268,7 @@ div.light_rounded .pp_next:hover {
 
 
 .mi-slider nav img {
-	width: 100px;
+	width: 100px;border:2px solid #47CD51;
 }
 
 .mi-slider {
@@ -352,9 +352,12 @@ div.light_rounded .pp_next:hover {
 	text-align: center;
 	max-width: 800px;
 	margin: 0 auto;
-	border-top: 5px solid #333;
+	border: 4px solid #47CD51;background:black;
 }
-
+.modal-content {
+	background-color: black !important;
+}
+.codrops-top.clearfix{background:#47CD51C4 !important;}
 .no-js nav {
 	display: none;
 }
@@ -390,7 +393,7 @@ div.light_rounded .pp_next:hover {
 
 .mi-slider nav a.mi-selected:after {
 	border-color: transparent;
-	border-top-color: #fff;
+	border-top-color: black;
 	border-width: 20px;
 	left: 50%;
 	margin-left: -20px;
@@ -398,7 +401,7 @@ div.light_rounded .pp_next:hover {
 
 .mi-slider nav a.mi-selected:before {
 	border-color: transparent;
-	border-top-color: #333;
+	border-top-color: #47CD51;
 	border-width: 27px;
 	left: 50%;
 	margin-left: -27px;
@@ -620,6 +623,7 @@ div.light_rounded .pp_next:hover {
 .img-thumbnail {
 	width: 100% !important;
 	margin-bottom: 30px !important;
+	border: 0px !important;padding:0px !important;height:200px !important;
 }
 .Portfolio:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);	transform: translateY(-10px);
@@ -635,16 +639,29 @@ div.light_rounded .pp_next:hover {
     padding: 5px;
     text-align: center;
     font-size: 90%;
-    background:black;
-    color:#47CD51;
 }
-
+.desc a{color:#47CD51;}
+.desc a:hover{color:#47CD51;}
+#mi-slider li a {
+	color: #47CD51;
+}
+a{text-decoration:none !important;}
 .nav {
-    padding:20px;
-    margin-left:340px;
-    margin-top:-30px;
+	padding: 20px;
+	margin-left: 0;
+	margin-top: 0px;
+	display: flex;
+	justify-content: center;
 }
-
+.tab-pane.fade.show {
+	display: none !important;
+}
+.tab-pane.fade.show.active.in {
+	display: block !important;
+}
+#pills-tabContent {
+	margin-top: 50px;
+}
 .nav li a { 
     margin:5px;
     padding: 15px 50px; 
@@ -662,7 +679,7 @@ div.light_rounded .pp_next:hover {
 }
 .nav .active { 
     background-color:#47CD51 !important;
-    color:#fff !important;
+    color:#fff !important;border-radius:5px;
 }
 
 @keyframes winanim {
@@ -704,11 +721,20 @@ div.light_rounded .pp_next:hover {
 	width: 80% !important;
 	margin: 30px auto;
 }
+.codrops-top.clearfix a strong {
+	color: #000;
+}
+.modal-header {
+	border-bottom: 1px solid #47CD51 !important;
+}
+.text h1 {
+	color: white;
+}
 .text {
 	width: 40%;
 	display: flex;
 align-items: center;
-
+margin-left:30px;
 -webkit-align-items: center;
 -webkit-align-content: center;
 -moz-box-pack: center;
@@ -721,10 +747,10 @@ display: -moz-box;
 display: -ms-flexbox;
 display: -webkit-flex;flex-wrap: wrap;
 }
-.text p{text-align:left;}
-#mi-slider {
-	width: 60%;
-}
-.main {
-	display: flex;
+.text p{text-align:left;color:white;}
+.time {color: white;}
+#mi-slider {width: 60%;background:black;}
+.main {display: flex;}
+.modal-footer {
+	border-top: 1px solid #47CD51 !important;
 }
