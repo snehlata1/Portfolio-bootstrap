@@ -274,7 +274,7 @@ div.light_rounded .pp_next:hover {
 .mi-slider {
 	position: relative;
 	margin-top: 30px;
-	height: 490px;
+	height: 100%;
 }
 
 .mi-slider ul {
@@ -282,11 +282,11 @@ div.light_rounded .pp_next:hover {
 	position: absolute;
 	width: 100%;
 	left: 0;
-	bottom: 140px;
-	overflow: hidden;
+	overflow-y: scroll;
+	overflow-x:hidden;
 	text-align: center;
 	pointer-events: none;display: flex;
-	justify-content: center;
+	justify-content: end;height:100%;
 }
 
 .no-js .mi-slider ul {
@@ -305,7 +305,7 @@ div.light_rounded .pp_next:hover {
 	display: inline-block;
 	padding: 20px;
 	width: 20%;
-	max-width: 300px;
+	max-width: 500px;
 	-webkit-transform: translateX(600%);
 	transform: translateX(600%);
 	-webkit-transition: opacity 0.2s linear;
@@ -347,15 +347,28 @@ div.light_rounded .pp_next:hover {
 } 
 
 .mi-slider nav {
-	position: relative;
-	top: 400px;
+	position: absolute;
+	top: 0;
 	text-align: center;
-	max-width: 800px;
+	max-width: 200px;
 	margin: 0 auto;
-	border: 4px solid #47CD51;background:black;
+	border: 4px solid #47CD51;
+	z-index: 999;
+	width: 100%;left:0px;height:100%;
+	display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
 .modal-content {
-	background-color: black !important;
+	background-color: black !important;height:100%;
+}
+.close {
+	position: absolute;
+	top: -23px;
+	right: -38px;
+}
+.modal-body {
+	height: 100%;
 }
 .codrops-top.clearfix{background:#47CD51C4 !important;}
 .no-js nav {
@@ -366,7 +379,7 @@ div.light_rounded .pp_next:hover {
 	display: inline-block;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	padding: 40px 10px 30px 10px;
+	padding: 10px;
 	position: relative;
 	color: #888;
 	outline: none;
@@ -383,7 +396,7 @@ div.light_rounded .pp_next:hover {
 .mi-slider nav a.mi-selected:before {
 	content: '';
 	position: absolute;
-	top: -5px;
+	top: 0px;
 	border: solid transparent;
 	height: 0;
 	width: 0;
@@ -393,7 +406,7 @@ div.light_rounded .pp_next:hover {
 
 .mi-slider nav a.mi-selected:after {
 	border-color: transparent;
-	border-top-color: black;
+	/* border-top-color: black; */
 	border-width: 20px;
 	left: 50%;
 	margin-left: -20px;
@@ -401,7 +414,7 @@ div.light_rounded .pp_next:hover {
 
 .mi-slider nav a.mi-selected:before {
 	border-color: transparent;
-	border-top-color: #47CD51;
+	/* border-top-color: #47CD51; */
 	border-width: 27px;
 	left: 50%;
 	margin-left: -27px;
@@ -718,8 +731,8 @@ a{text-decoration:none !important;}
 	width: 100% !important;display:block !important;
 }
 .modal-dialog {
-	width: 80% !important;
-	margin: 30px auto;
+	width: 90% !important;
+	margin: 30px auto;height:100%;
 }
 .codrops-top.clearfix a strong {
 	color: #000;
@@ -750,7 +763,12 @@ display: -webkit-flex;flex-wrap: wrap;
 .text p{text-align:left;color:white;}
 .time {color: white;}
 #mi-slider {width: 60%;background:black;}
-.main {display: flex;}
+.main {display: flex;height:100%;}
 .modal-footer {
 	border-top: 1px solid #47CD51 !important;
 }
+.carousel {
+	height: 100%;
+}
+
+
