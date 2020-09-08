@@ -309,7 +309,7 @@ div.light_rounded .pp_next:hover {
 	-webkit-transform: translateX(600%);
 	transform: translateX(600%);
 	-webkit-transition: opacity 0.2s linear;
-	transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;margin: 0 0 0 auto;
 }
 
 .no-js .mi-slider ul li {
